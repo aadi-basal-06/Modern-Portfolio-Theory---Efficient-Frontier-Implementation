@@ -166,11 +166,13 @@ Asset Allocation:
 ## 🚀 Usage Guide
 
 ### Option 1: Real Data (Requires Network)
-```python
-from portfolio_optimization import PortfolioOptimizer
-import yfinance as yf
+```bash
+jupyter notebook portfolio_optimization.ipynb
+```
 
-# Fetch real data
+Open the notebook, run the import and optimizer class cells, then run the real-data setup cell:
+
+```python
 tickers = ['AAPL', 'MSFT', 'GOOGL', 'NVDA', 'TESLA', 'META']
 optimizer = PortfolioOptimizer(
     tickers=tickers,
@@ -178,16 +180,16 @@ optimizer = PortfolioOptimizer(
     end_date='2024-01-01',
     risk_free_rate=0.03
 )
-
-# Generate and plot
-max_sharpe_w, _, _, min_var_w = optimizer.plot_efficient_frontier()
 ```
 
 ### Option 2: Synthetic Data (Offline - No Network Required)
-```python
-from portfolio_optimization_v2 import PortfolioOptimizer, generate_synthetic_portfolio_data
+```bash
+jupyter notebook portfolio_optimization_v2.ipynb
+```
 
-# Generate synthetic data
+Open the notebook, run the import, optimizer class, and synthetic data generator cells, then initialize the optimizer:
+
+```python
 mean_returns, cov_matrix = generate_synthetic_portfolio_data(num_assets=6)
 
 optimizer = PortfolioOptimizer(
@@ -197,7 +199,6 @@ optimizer = PortfolioOptimizer(
     risk_free_rate=0.03
 )
 
-# Optimize
 max_sharpe_w, _, _, min_var_w = optimizer.plot_efficient_frontier(random_portfolios_num=5000)
 ```
 

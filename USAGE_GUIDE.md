@@ -1,14 +1,14 @@
-# Code Comparison & Usage Guide
+# Notebook Comparison & Usage Guide
 
 ## 📋 Two Implementation Versions
 
-### Version 1: Real Data (portfolio_optimization.py)
+### Version 1: Real Data (portfolio_optimization.ipynb)
 - **Data Source**: Yahoo Finance API (yfinance)
 - **Best For**: Production use, real portfolio management
 - **Requirements**: Network access, API working
 - **Data**: Real historical stock prices (2020-2024)
 
-### Version 2: Synthetic Data (portfolio_optimization_v2.py)
+### Version 2: Synthetic Data (portfolio_optimization_v2.ipynb)
 - **Data Source**: Synthetic realistic returns
 - **Best For**: Learning, offline use, demonstrations
 - **Requirements**: No network needed
@@ -20,7 +20,7 @@
 
 ### Run Offline Version (Recommended for Learning)
 ```bash
-python portfolio_optimization_v2.py
+jupyter notebook portfolio_optimization_v2.ipynb
 ```
 
 **Output:**
@@ -33,7 +33,7 @@ python portfolio_optimization_v2.py
 
 ### Run Real Data Version (Requires Network)
 ```bash
-python portfolio_optimization.py
+jupyter notebook portfolio_optimization.ipynb
 ```
 
 ---
@@ -302,7 +302,7 @@ Solution: Increase num_portfolios:
 ## 📚 Learning Path
 
 ### Beginner (2-4 hours)
-1. Run `portfolio_optimization_v2.py`
+1. Run `portfolio_optimization_v2.ipynb`
 2. Read "📊 Key Output Explained" section
 3. Understand the three linear algebra formulas
 4. Interpret the visualization
@@ -367,24 +367,23 @@ Optimal portfolio balances:
 
 ### Common Commands
 
+```bash
+# Open the recommended offline notebook
+jupyter notebook portfolio_optimization_v2.ipynb
+```
+
+Inside the notebook, rerun individual cells for specific tasks:
+
 ```python
-# Run everything at once
-python portfolio_optimization_v2.py
+# Just optimize after the optimizer cell has run
+w_sharpe = optimizer.optimize_portfolio('sharpe')
+w_minvar = optimizer.optimize_portfolio('min_variance')
 
-# Import for custom use
-from portfolio_optimization_v2 import PortfolioOptimizer, generate_synthetic_portfolio_data
-mean_ret, cov = generate_synthetic_portfolio_data(n_assets=6)
-opt = PortfolioOptimizer(['A','B','C','D','E','F'], mean_ret, cov)
-
-# Just optimize
-w_sharpe = opt.optimize_portfolio('sharpe')
-w_minvar = opt.optimize_portfolio('min_variance')
-
-# Just calculate
-ret, vol = opt.portfolio_performance(np.array([0.2, 0.3, 0.1, 0.2, 0.1, 0.1]))
+# Just calculate after the optimizer cell has run
+ret, vol = optimizer.portfolio_performance(np.array([0.2, 0.3, 0.1, 0.2, 0.1, 0.1]))
 
 # Print details
-opt.print_portfolio_details(w_sharpe, "My Portfolio")
+optimizer.print_portfolio_details(w_sharpe, "My Portfolio")
 ```
 
 ---

@@ -6,19 +6,19 @@ You now have a **complete, production-ready implementation** of Modern Portfolio
 
 ### 📁 Files Included
 
-1. **portfolio_optimization.py** (Full Version with Real Data)
+1. **portfolio_optimization.ipynb** (Full Version with Real Data)
    - Fetches real stock data from Yahoo Finance
    - ~300 lines with extensive comments
    - Use when you have network access
    - Best for production portfolios
 
-2. **portfolio_optimization_v2.py** (Enhanced Version with Synthetic Data)
+2. **portfolio_optimization_v2.ipynb** (Enhanced Version with Synthetic Data)
    - Works offline with realistic synthetic data
    - ~450 lines with extensive documentation
    - Includes visualization and detailed output
    - **RECOMMENDED for learning**
 
-3. **minimal_mpt.py** (Minimal 60-Line Version)
+3. **minimal_mpt.ipynb** (Minimal 60-Line Version)
    - Core algorithm in ~60 lines
    - Shows the essential implementation
    - Great for understanding the basics
@@ -60,14 +60,14 @@ A **complete portfolio optimization system** that:
 
 ## 🚀 Quick Start (3 Steps)
 
-### Step 1: Run the Code
+### Step 1: Open the Notebook
 ```bash
-python portfolio_optimization_v2.py
+jupyter notebook portfolio_optimization_v2.ipynb
 ```
 
 ### Step 2: View the Output
 - A beautiful visualization saved as `efficient_frontier.png`
-- Console output with portfolio statistics
+- Notebook cell output with portfolio statistics
 
 ### Step 3: Customize
 ```python
@@ -214,30 +214,18 @@ The optimizer uses correlation to decide allocations
 ## 🛠️ Three Ways to Use This
 
 ### Way 1: Learning (Beginner)
-```python
-# Read the documentation, understand the concepts
-# Run the synthetic data version (no network needed)
-python portfolio_optimization_v2.py
-
-# Modify it: Change returns, correlations, risk-free rate
-# See how results change
+```bash
+# Open the synthetic data notebook (no network needed)
+jupyter notebook portfolio_optimization_v2.ipynb
 ```
+
+Then edit the notebook cells for returns, correlations, or the risk-free rate and rerun the affected cells.
 
 ### Way 2: Quick Implementation (Intermediate)
-```python
-# Use the minimal 60-line version as a template
-# Adapt to your specific assets
-# Integrate into your own application
-```
+Open `minimal_mpt.ipynb`, use the minimal implementation as a template, and adapt the cells to your assets.
 
 ### Way 3: Production Use (Advanced)
-```python
-# Use Version 1 with real data from yfinance
-# Add constraints (sector limits, position limits)
-# Implement rebalancing strategy
-# Monitor performance against Sharpe ratio
-# Add risk management (VaR, drawdown limits)
-```
+Open `portfolio_optimization.ipynb` for the real-data workflow, then add constraints, rebalancing, monitoring, and risk management cells as needed.
 
 ---
 
@@ -299,7 +287,7 @@ By completing this project, you've learned:
 ## 🚀 Next Steps
 
 ### Short Term (This Week)
-1. Run both implementations
+1. Run the minimal and synthetic-data notebooks
 2. Understand the visualizations
 3. Read MPT_DOCUMENTATION.md
 4. Modify synthetic data (test sensitivity)
@@ -342,11 +330,11 @@ Verify your implementation is correct:
 
 ### For Implementation Questions
 - See: USAGE_GUIDE.md (Section: Common Issues & Solutions)
-- See: Code comments in portfolio_optimization_v2.py
+- See: markdown notes and code comments in portfolio_optimization_v2.ipynb
 
 ### For Customization
 - See: USAGE_GUIDE.md (Section: Customization Examples)
-- See: minimal_mpt.py (for clean, simple code)
+- See: minimal_mpt.ipynb (for clean, simple code)
 
 ---
 
@@ -356,7 +344,7 @@ You've successfully completed this project when:
 
 1. **Conceptual**: You can explain the Efficient Frontier and why it exists
 2. **Mathematical**: You can write the three key formulas from memory
-3. **Implementation**: You can run all three versions without errors
+3. **Implementation**: You can run all three notebooks without errors
 4. **Practical**: You can modify the code to optimize different asset sets
 5. **Visual**: You can interpret the Efficient Frontier plot correctly
 6. **Advanced**: You can add constraints and extensions
@@ -374,7 +362,7 @@ You've successfully completed this project when:
 - **Linear Algebra Operations**: 3 core formulas
 - **Optimization Algorithm**: SLSQP (Sequential Least Squares Programming)
 - **Constraints**: 1 (budget constraint) + bounds
-- **Output Formats**: PNG visualization + console statistics
+- **Output Formats**: PNG visualization + notebook cell output
 
 ---
 
@@ -397,8 +385,8 @@ Upon completing this project, you've demonstrated:
 | Problem | Solution | Documentation |
 |---------|----------|----------------|
 | Code won't run | Check Python version (3.8+), install packages | USAGE_GUIDE.md |
-| No network access | Use portfolio_optimization_v2.py | README (this file) |
-| Results don't match | Verify weights sum to 1.0, check seed | Code comments |
+| No network access | Use portfolio_optimization_v2.ipynb | README (this file) |
+| Results don't match | Verify weights sum to 1.0, check seed | Notebook code cells |
 | Frontier looks jagged | Increase num_portfolios parameter | USAGE_GUIDE.md |
 | Optimization fails | Add better initial guess, relax tolerance | USAGE_GUIDE.md |
 

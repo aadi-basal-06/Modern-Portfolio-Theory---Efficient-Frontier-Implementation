@@ -13,10 +13,10 @@
    ├─ INDEX.md ← Navigation guide
    └─ README.md ← Project overview
 
-   PYTHON CODE (Choose One):
-   ├─ minimal_mpt.py (⭐ 60 lines - START HERE for learning)
-   ├─ portfolio_optimization_v2.py (⭐ 420 lines - RECOMMENDED)
-   └─ portfolio_optimization.py (Real data - Production use)
+   JUPYTER NOTEBOOKS (Choose One):
+   ├─ minimal_mpt.ipynb (⭐ 60 lines - START HERE for learning)
+   ├─ portfolio_optimization_v2.ipynb (⭐ 420 lines - RECOMMENDED)
+   └─ portfolio_optimization.ipynb (Real data - Production use)
 
    DOCUMENTATION:
    ├─ MPT_DOCUMENTATION.md (Mathematical deep dive)
@@ -31,13 +31,13 @@
 ⚡ QUICK START (5 MINUTES):
 
    1. RUN THE CODE:
-      python minimal_mpt.py
+      jupyter notebook minimal_mpt.ipynb
    
    2. VIEW RESULTS:
       Open efficient_frontier_minimal.png
    
    3. READ OUTPUT:
-      See Sharpe Ratio, Volatility, and Asset Allocation in console
+      See Sharpe Ratio, Volatility, and Asset Allocation in notebook cell output
 
 ================================================================================
 
@@ -61,25 +61,25 @@
 🎯 CHOOSE YOUR PATH:
 
    ⭐ QUICKEST (5 min):
-      1. python minimal_mpt.py
+      1. jupyter notebook minimal_mpt.ipynb
       2. View efficient_frontier_minimal.png
       3. Done!
 
    📚 RECOMMENDED (1-2 hours):
       1. Read INDEX.md
-      2. python portfolio_optimization_v2.py
+      2. jupyter notebook portfolio_optimization_v2.ipynb
       3. View efficient_frontier.png
       4. Skim README.md and USAGE_GUIDE.md
 
    🔬 COMPREHENSIVE (4 hours):
       1. Read README.md fully
-      2. Run both Python versions
+      2. Run the minimal and synthetic-data notebooks
       3. Study all documentation
       4. Experiment with customizations
 
    💼 PRODUCTION (8+ hours):
       1. Understand all code
-      2. Use real data (portfolio_optimization.py)
+      2. Use real data (portfolio_optimization.ipynb)
       3. Add constraints and extensions
       4. Backtest and deploy
 
@@ -127,9 +127,9 @@
 
 🚀 NEXT STEPS:
 
-   1. Run:     python minimal_mpt.py
+   1. Run:     jupyter notebook minimal_mpt.ipynb
    2. Read:    INDEX.md or README.md
-   3. Explore: Try the other Python versions
+   3. Explore: Try the other notebooks
    4. Learn:   Study the documentation files
    5. Create:  Customize for your own assets
 
@@ -162,9 +162,9 @@
 
 🎓 FILES SIZES:
 
-   minimal_mpt.py ............................ 60 lines (Essential)
-   portfolio_optimization_v2.py ............. 420 lines (Recommended)
-   portfolio_optimization.py ............... 300+ lines (Production)
+   minimal_mpt.ipynb ............................ 60 lines (Essential)
+   portfolio_optimization_v2.ipynb ............. 420 lines (Recommended)
+   portfolio_optimization.ipynb ............... 300+ lines (Production)
    
    README.md ................................ 428 lines
    INDEX.md ................................. 380+ lines
@@ -178,7 +178,7 @@
 
 🏁 READY? START HERE:
 
-   python minimal_mpt.py
+   jupyter notebook minimal_mpt.ipynb
 
    Then read INDEX.md for guidance.
 

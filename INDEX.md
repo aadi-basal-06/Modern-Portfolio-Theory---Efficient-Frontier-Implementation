@@ -8,10 +8,10 @@ A complete **Financial Portfolio Optimization** system implementing Modern Portf
 
 ## 📁 Complete File List
 
-### 🐍 Python Implementation Files (3 Versions)
+### 📓 Jupyter Notebook Files (3 Versions)
 
-#### 1. **minimal_mpt.py** ⭐ **START HERE**
-- **Size**: 126 lines
+#### 1. **minimal_mpt.ipynb** ⭐ **START HERE**
+- **Size**: Minimal notebook
 - **Purpose**: Minimal, clean implementation
 - **Best For**: Understanding the core algorithm
 - **Time to Run**: < 10 seconds
@@ -20,11 +20,11 @@ A complete **Financial Portfolio Optimization** system implementing Modern Portf
 
 **Quick Start:**
 ```bash
-python minimal_mpt.py
+jupyter notebook minimal_mpt.ipynb
 ```
 
-#### 2. **portfolio_optimization_v2.py** ⭐ **RECOMMENDED**
-- **Size**: 420 lines
+#### 2. **portfolio_optimization_v2.ipynb** ⭐ **RECOMMENDED**
+- **Size**: Full synthetic-data notebook
 - **Purpose**: Full implementation with synthetic data
 - **Best For**: Learning and production prototypes
 - **Time to Run**: 30-60 seconds
@@ -39,11 +39,11 @@ python minimal_mpt.py
 
 **Quick Start:**
 ```bash
-python portfolio_optimization_v2.py
+jupyter notebook portfolio_optimization_v2.ipynb
 ```
 
-#### 3. **portfolio_optimization.py** (Real Data)
-- **Size**: 300+ lines
+#### 3. **portfolio_optimization.ipynb** (Real Data)
+- **Size**: Full real-data notebook
 - **Purpose**: Production-ready with real data
 - **Best For**: Live trading, real portfolios
 - **Time to Run**: Depends on network
@@ -57,7 +57,7 @@ python portfolio_optimization_v2.py
 
 **Quick Start:**
 ```bash
-python portfolio_optimization.py
+jupyter notebook portfolio_optimization.ipynb
 ```
 
 ---
@@ -96,7 +96,7 @@ python portfolio_optimization.py
 ### 📊 Visualization Files
 
 #### 1. **efficient_frontier.png**
-- Main output from `portfolio_optimization_v2.py`
+- Main output from `portfolio_optimization_v2.ipynb`
 - **Left Panel**: Efficient Frontier with 5,000 random portfolios
 - **Right Panel**: Optimal portfolio asset allocation
 - **Shows**:
@@ -108,7 +108,7 @@ python portfolio_optimization.py
   - Green dashed line: Capital Allocation Line
 
 #### 2. **efficient_frontier_minimal.png**
-- Output from `minimal_mpt.py`
+- Output from `minimal_mpt.ipynb`
 - Simpler visualization
 - Same core insights
 - Faster to generate
@@ -119,8 +119,7 @@ python portfolio_optimization.py
 
 ### Step 1: Run the Code (2 minutes)
 ```bash
-cd /mnt/user-data/outputs
-python minimal_mpt.py
+jupyter notebook minimal_mpt.ipynb
 ```
 
 **You'll see:**
@@ -145,16 +144,16 @@ Open and skim the "What You've Built" section in README.md
 ## 📖 Learning Paths
 
 ### Path 1: Quick Understanding (1 hour)
-1. Run `minimal_mpt.py` (5 min)
+1. Run `minimal_mpt.ipynb` (5 min)
 2. Read README.md overview (15 min)
 3. Study the visualization (10 min)
 4. Review three key formulas (10 min)
 5. Try one customization (20 min)
 
 ### Path 2: Comprehensive Learning (4 hours)
-1. Run `minimal_mpt.py` (10 min)
+1. Run `minimal_mpt.ipynb` (10 min)
 2. Read README.md fully (20 min)
-3. Run `portfolio_optimization_v2.py` (10 min)
+3. Run `portfolio_optimization_v2.ipynb` (10 min)
 4. Read USAGE_GUIDE.md (30 min)
 5. Study MPT_DOCUMENTATION.md (60 min)
 6. Customize and experiment (90 min)
@@ -218,13 +217,13 @@ Asset Allocation:
 
 ### Change Assets
 ```python
-# In minimal_mpt.py, change line ~6:
+# In the data setup cell of minimal_mpt.ipynb:
 tickers = ['AAPL', 'MSFT', 'JPM', 'KO']  # 4 assets instead of 6
 ```
 
 ### Change Time Period
 ```python
-# In portfolio_optimization_v2.py:
+# In portfolio_optimization.ipynb:
 optimizer = PortfolioOptimizer(
     ...
     start_date='2018-01-01',  # 2018 instead of 2020
@@ -266,41 +265,41 @@ Your implementation is correct when:
 ### Running the Code
 ```bash
 # Minimal version (fastest, cleanest)
-python minimal_mpt.py
+jupyter notebook minimal_mpt.ipynb
 
 # Full version with pretty output (recommended)
-python portfolio_optimization_v2.py
+jupyter notebook portfolio_optimization_v2.ipynb
 
 # Real data version (requires network)
-python portfolio_optimization.py
+jupyter notebook portfolio_optimization.ipynb
 ```
 
 ### Key Files by Purpose
 | Purpose | File |
 |---------|------|
-| **Understand algorithm** | minimal_mpt.py |
+| **Understand algorithm** | minimal_mpt.ipynb |
 | **Learn the concept** | README.md |
 | **Get detailed math** | MPT_DOCUMENTATION.md |
 | **Practical help** | USAGE_GUIDE.md |
 | **See results** | efficient_frontier.png |
-| **Production use** | portfolio_optimization.py |
+| **Production use** | portfolio_optimization.ipynb |
 
 ---
 
 ## 🎯 What's Next?
 
 ### Immediate (Next 30 minutes)
-- [ ] Run `minimal_mpt.py`
+- [ ] Run `minimal_mpt.ipynb`
 - [ ] View the visualization
 - [ ] Read the README.md overview
 
 ### Short Term (This week)
-- [ ] Run `portfolio_optimization_v2.py`
+- [ ] Run `portfolio_optimization_v2.ipynb`
 - [ ] Understand the three formulas
 - [ ] Try one customization
 
 ### Medium Term (This month)
-- [ ] Use real data (portfolio_optimization.py)
+- [ ] Use real data (portfolio_optimization.ipynb)
 - [ ] Add your own assets
 - [ ] Backtest the strategy
 
@@ -355,7 +354,7 @@ By completing this project, you understand:
 
 ## 📊 Statistics
 
-- **Total Lines of Code**: ~1,300 (across 3 versions)
+- **Notebook Implementations**: 3
 - **Documentation Lines**: ~1,600
 - **Assets Optimized**: 6 (easily scalable)
 - **Portfolios Generated**: 5,000 random + 100 optimal
@@ -367,7 +366,7 @@ By completing this project, you understand:
 
 ## 🎓 Final Tips
 
-1. **Start with minimal_mpt.py** - It's simple and fast
+1. **Start with minimal_mpt.ipynb** - It's simple and fast
 2. **Read README.md** - Gets you oriented quickly
 3. **Review the visualization** - The picture is worth 1000 words
 4. **Understand the three formulas** - They're the foundation
@@ -387,6 +386,6 @@ For specific questions:
 
 ---
 
-**Ready to optimize portfolios? Start with `python minimal_mpt.py`! 🚀**
+**Ready to optimize portfolios? Start with `jupyter notebook minimal_mpt.ipynb`! 🚀**
 
 *Version 2.0 | Created April 2024 | Python 3.8+*
